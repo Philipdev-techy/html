@@ -3,21 +3,25 @@
 
 <head>
     <title>HTML cheat sheet</title>
+    <style>
+        .container{
+            height: 100vh;
+            display: grid;
+            gap: 3rem;
+            grid-template-columns: 1fr 1fr 1.5fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .item{
+            background-color: purple;
+        }
+    </style>
 </head>
 
 <body>
-    <!--Headings-->
-    <h1>Heading one</h1>
-    <h2>Heading two</h2>
-    <h3>Heading three</h3>
-    <h4>Heading four</h4>
-    <h5>Heading five</h5>
-    <h6>Heading six</h6>
-    <!--Paragraph-->
-    <p>
-        <strong>Lorem,</strong>
-        <em>ipsum dolor s</em>
-        it amet consectetur adipisicing elit.
-        Nemo, enim.
-    </p>
+    <div class="container">
+        <div class="item cowboy">🤯</div>
+        <div class="item astronaut">🤖</div>
+        <div class="item book">🔑</div>
+    </div>
 </body>
